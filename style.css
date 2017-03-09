@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Chewy|Lilita+One|Sigmar+One');
+
+/*HEADER*/
+
+header {
+	background: #000000;
+	width: 100%;
+	display:flex;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav {
+ 	width: 100%;
+}
+
+header>nav>ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header>nav>ul:before,
+header>nav>ul:after { 
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.logo {
+	display: inline-block;
+	float:left;
+}
+
+header>nav>.logo img {
+	width: 30px;	
+}
+
+header>nav>ul>li {
+  	display: inline-block;
+}
+
+header>nav>ul>li>a {
+	line-height: 50px;
+	display: block;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header>nav>ul>li>a:hover {
+	background: #ccc;
+	color: #000000;
+}
+
+/*HERO*/
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-image: url(http://konstanty.it/bogna/img/coffee.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}	
+
+.slogan {
+	background: rgba(0, 0, 0, 0.5);
+	float: right;
+	max-width: 800px;
+	text-align: center;
+	color: #fff; 
+}
+
+/* ICON PART, HEADING*/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+section>.container,
+section>.heading {
+	width: 100%;
+	text-align: center;	
+}
+
+.container.icon {
+	margin: 80px auto;
+}
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	box-sizing: border-box;
+	float: left;
+	min-height: 1px;
+}
+
+.icon>.col-icon-heading {
+	padding: 12px;
+}
+
+.container>.row>.col-icon-heading h2,
+.container>.row>.col-icon-heading p {
+ 	text-align: center;	
+}
+
+.heading p,
+.heading h2 {
+ 	text-align: center;	
+}
+
+.heading {
+	margin: 80px auto;
+}
+
+span {
+	font-weight: lighter;	
+}
+
+.row p {
+	font-size: 20px;
+	color: #b2b0af;
+	font-family: "Open Sans";
+}
+
+h2 {
+	text-transform: uppercase;	
+}
+
+.icon-coffe,
+.icon-clock,
+.icon-book {
+	border: 0;
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 40px;
+	line-height: 75px;
+	border-radius: 15%;
+	width: 75px;
+	height: 75px;
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.col-4 .icon-part {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.icon-coffe:hover,
+.icon-clock:hover,
+.icon-book:hover {
+	background: #00CCFF;	
+}
+.icon-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#blue-clock {
+	color: #00CCFF;
+}
+
+/*GALERY*/
+
+/*GALERY-PICTURES*/
+
+.col-galery1 {width: 20%;}
+.col-galery2 {width: 40%;}
+
+.galery {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.galery>.row:before, 
+.galery>.row:after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+.galery>.row {
+	display: inline-block;
+	width: 100%;
+}
+
+.col-galery2,
+.col-galery1 {
+	display: inline-block;
+	float: left;
+	padding: 0;
+}
+
+.col-galery2 img,
+.col-galery1 img {
+	display: block;
+	min-width: 100%;
+}
+
+.gallery__picture-container {
+	display:block;
+	width: auto;
+}
+
+ /*GALERY-ICON*/
+ 
+.element-with-cover {
+ 	position: relative;
+}
+
+.layer {
+	position: absolute;	
+	display: none;
+	align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;	
+}
+
+ .element-with-cover:hover .layer {
+ 	background: rgba(0,0,0, 0.5);
+ 	display: flex;
+ }
+ 
+  
+.layer>span:hover {
+	display: inline-block;
+	margin: 5px;
+	color: #adacac;
+}
+.layer:hover .second-layer {
+		display:inline-block;
+		padding: 5px;
+		background: rgba(255,255,255, 0.8);
+		text-align: center;
+		width: 30px;
+		border-radius: 20%;
+		margin: 10px;
+}
+
+
+/*TEAM*/
+
+.container>.row:before, 
+.container>.row:after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+
+.team>h2 {
+ text-align: center;	
+}
+
+
+.circle {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.circle>img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: block;
+}
+
+.circle>span {
+	position absolute;
+ 	display: flex;
+ 	align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.col-3>p {
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #000000;
+}
+
+.element-film {
+	position: relative;	
+}
+
+.element-film p {
+ 	text-align: center;	
+}
+
+.film {
+	position: absolute;	
+	display: none;
+	align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle:hover .film {
+ 	background: rgba(0,0,0, 0.5);
+ 	display: flex;
+ 	color: #FFFFFF;	
+ }
+
+
+/*PICTURE*/
+
+.section-picture {
+    background: url(http://img03.deviantart.net/c4e4/i/2012/268/2/5/crumpled_paper_background_image_by_k4l3b-d5fxhl3.jpg)
+}
+ 
+.section-picture>.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-col-fridge,
+.right-col-fridge {
+	padding: 15px;	
+}
+ 
+.section-picture>.container>.row>.col {
+    float: left;
+}
+ 
+.section-picture>.container>.row>.fridge {
+    margin-top: 50px;
+}
+ 
+.section-picture>.container>.row>.text {
+    margin-top: 50px;
+    text-align: left;
+}
+ 
+.text>.row>.col>p {
+    color: #000000;
+    font-family: "Open Sans";
+}
+ 
+.text:h2 {
+    font-weight:bold;
+    font-family: "Open Sans";
+}
+/*NUMBERS*/
+
+.numbers>.container {	
+ 	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.numbers>.container>.row {
+	display:block;
+	align-items: center;
+	justify-content: center;
+}
+
+.numbers>.container>.row>.col-3>p {
+	color: #00CCFF;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.numbers>.container>.row>.col-3>h1 {
+	font-family: 'Chewy', cursive;
+	text-align: center;
+}
+
+
+/*FOOTER*/
+
+.footer {	
+	background-color: #4c4c4c;
+}
+
+.footer1-header {	
+	color: #FFFFFF;
+}
+
+.copyrights {	
+	color: #FFFFFF;
+	background: #323232;
+}
+
+.copyrights>p {	
+	text-align: center;
+}
+
+.social-media {
+	display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+.social-media>.button {
+   	background-color: #00C7E8;
+	width: 30px;
+	height: 30px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-right: 20px;
+}
+
+.social-media>.button>i {
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 10px;
+}
+
+.footer1-header>.content-get1>.col-4 p {
+	color: #FFFFFF;	
+}
+
+.footer1-header>.footer__column--main-header:after {
+ 	content:" ";
+ 	display: inline-block;
+ 	width: 50px;
+ 	height: 3px;
+ 	background: #FFFFFF;
+ 	position: absolute;
+ 	top: 32px;
+}
+
+.footer1-header h3,
+.footer1 p,
+.content-get1  p {
+ 	text-align: left;
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+}
+
+.footer1-header>.footer__column--main-header> h3 {	
+ 	display: inline-block;
+ 	padding-right: 10px;
+ 	position: relative;
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+}
+
+.footer1-header {
+	position: relative;	
+}
+
+.content-get1>.info p,
+.content-get1>.col-8 p {
+ text-align: left;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-size: 15px;
+}
+
+
+.container.footer1 p {
+	font-size: 15px;
+}
+
+
+
+@media (max-width: 767px){
+    /* For tablets: */
+    
+    * {
+		box-sizing: border-box;
+	}
+ 
+  	[class*="col-"] {
+    	width: 100%;
+    	padding: 12px;
+    	float:left;
+ }  
+	
+  	header ul {
+		float: none;
+		width: 100%;
+	}
+	
+	header li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}  
+    
+	.logo {
+		float: none;
+		display:flex;
+		text-align: center;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.galery {
+		float: none;
+		display: inline-block;
+	}
+
+
+	.gallery__picture-container {
+		width: auto;
+		display: inline-block;  
+		position: relative;
+	}
+
+
+	.element-with-cover {
+		text-align: center;
+	}
+	.section-picture .fridge {
+		text-align: center;
+	}
+	.section-picture .text h2 {
+		text-align: center;
+	}
+
+	.numbers div.col-3 {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.footer__column--main-header, 
+	.footer1 p,
+	.content-get1>.info p,
+	.content-get1>.col-8 p {
+		text-align: center;
+	}
+	.footer1>.row>.col-4 .social-media {
+		justify-content: center;
+	}
+
+	}
+
+	
